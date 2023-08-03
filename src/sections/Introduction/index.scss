@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+.Introduction {
+    padding-top: 5rem;
+
+    &__InfoColumn {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 5rem;
+    }
+}
