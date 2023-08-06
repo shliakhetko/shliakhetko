@@ -1,0 +1,99 @@
+@import "../../../styles/variables.scss";
+
+$height: 7.5rem;
+$border: 0.5rem;
+
+.Skill {
+    margin: 1rem;
+    height: $height;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $bg;
+
+    &__Icon {
+        top: -$border;
+        left: -$border;
+        width: $height;
+        height: $height;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $border solid $bg;
+        border-radius: 50%;
+        background-color: $text;
+        z-index: 10;
+        transition: 1s;
+
+        & * {
+            height: 50%;
+            width: 50%;
+        }
+    }
+
+    &__GlareWrapper {
+        top: 1rem;
+        left: 1rem;
+        height: calc($height - 2rem);
+        width: calc($height - 2rem);
+        position: absolute;
+        transform: rotate(-180deg) scale(1.35);
+        transition: 1s;
+    }
+
+    &__Glare {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 0.25rem;
+        border-top-left-radius: 100%;
+        border-top: 0.5rem solid $white;
+        border-left: 0.5rem solid $white;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    &__Content {
+        margin-left: 4.75rem;
+        padding: $border;
+        padding-left: 4.75rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        border-radius: 1rem;
+        background-color: $text;
+        opacity: 0.95;
+        transition: 0.5s;
+    }
+
+    &__Title {
+        color: $element;
+        font-weight: 600;
+        font-size: 1.15em;
+    }
+
+    &__Description {
+        font-size: 0.85em;
+    }
+
+    &:hover {
+        .Skill {
+            &__Content{
+                transform: translate(-0.5rem) scale(0.975);
+                opacity: 1;
+            }
+
+            &__Icon {
+                transform: scale(1.1);
+            }
+
+            &__Glare {
+                opacity: 0.25;
+            }
+
+            &__GlareWrapper {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+    }
+}
