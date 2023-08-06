@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+
+.SectionTitle {
+    font-size: 2.25em;
+
+    &__OtherColorText {
+        color: $hover;
+        font-weight: 600;
+    }
+}
