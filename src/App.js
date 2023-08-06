@@ -1,3 +1,4 @@
+import { AboutMe } from "./sections/AboutMe/AboutMe";
 import { Introduction } from "./sections/Introduction/Introduction";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <div className="App">
       <div className="Wrapper">
         <Introduction />
+        <AboutMe/>
       </div>
     </div>
   );
