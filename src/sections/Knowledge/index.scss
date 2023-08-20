@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.Knowledge {
+    background-color: $element;
+
+    .SectionTitle {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
