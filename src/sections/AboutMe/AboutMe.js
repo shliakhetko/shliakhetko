@@ -4,10 +4,11 @@ import SectionTitle from "../../components/titles/SectionTitle/SectionTitle";
 import { Description } from "../../components/paragraphs/Description/Description";
 import Skills from "../../components/lists/Skills/Skills";
 import skills from "../../data/skills";
+import Section from "../Section";
 
 export const AboutMe = () => {
   return (
-    <div className="AboutMe Row">
+    <Section className="AboutMe" isRow={true}>
       <div className="AboutMe__InfoColumn">
         <SectionTitle additional="Me">About </SectionTitle>
         <Description>
@@ -23,6 +24,6 @@ export const AboutMe = () => {
       <div className="AboutMe__SkillsColumn">
         <Skills list={skills}/>
       </div>
-    </div>
+    </Section>
   );
 };
