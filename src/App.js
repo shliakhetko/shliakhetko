@@ -1,6 +1,7 @@
 import { AboutMe } from "./sections/AboutMe/AboutMe";
 import { Introduction } from "./sections/Introduction/Introduction";
 import { Knowledge } from "./sections/Knowledge/Knowledge";
+import { Projects } from "./sections/Projects/Projects";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Introduction />
         <AboutMe />
         <Knowledge />
+        <Projects/>
       </div>
     </div>
   );
