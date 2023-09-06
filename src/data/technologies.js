@@ -1,11 +1,11 @@
-import html from "../images/html.png";
-import css from "../images/css.png";
-import js from "../images/js.png";
-import react from "../images/react.png";
-import redux from "../images/redux.png";
-import sass from "../images/sass.png";
-import tailwind from "../images/tailwind.png"
-import bootstrap from "../images/bootstrap.png";
+import html from "../images/technologies/html.png";
+import css from "../images/technologies/css.png";
+import js from "../images/technologies/js.png";
+import react from "../images/technologies/react.png";
+import redux from "../images/technologies/redux.png";
+import sass from "../images/technologies/sass.png";
+import tailwind from "../images/technologies/tailwind.png"
+import bootstrap from "../images/technologies/bootstrap.png";
 
 export const technologiesTypes = {
   BIG: { type: "BIG" },
@@ -23,6 +23,7 @@ export const technologiesLevels = {
 const technologies = [
   {
     title: "HTML",
+    slug:"html",
     type: technologiesTypes.BIG,
     thumbnail: html,
     description: "",
@@ -31,6 +32,7 @@ const technologies = [
   },
   {
     title: "CSS",
+    slug:"css",
     type: technologiesTypes.BIG,
     thumbnail: css,
     description: "",
@@ -39,6 +41,7 @@ const technologies = [
   },
   {
     title: "JavaScript",
+    slug:"js",
     type: technologiesTypes.BIG,
     thumbnail: js,
     description: "",
@@ -47,6 +50,7 @@ const technologies = [
   },
   {
     title: "React",
+    slug:"react",
     type: technologiesTypes.BIG,
     thumbnail: react,
     description: "",
@@ -55,6 +59,7 @@ const technologies = [
   },
   {
     title: "Redux",
+    slug:"redux",
     type: technologiesTypes.MEDIUM,
     thumbnail: redux,
     description: "",
@@ -63,6 +68,7 @@ const technologies = [
   },
   {
     title: "SASS",
+    slug:"sass",
     type: technologiesTypes.SMALL,
     thumbnail: sass,
     description: "",
@@ -71,6 +77,7 @@ const technologies = [
   },
   {
     title: "Tailwind CSS",
+    slug:"tailwind",
     type: technologiesTypes.MEDIUM,
     thumbnail: tailwind,
     description: "",
@@ -79,6 +86,7 @@ const technologies = [
   },
   {
     title: "Bootstrap",
+    slug:"bootstrap",
     type: technologiesTypes.MEDIUM,
     thumbnail: bootstrap,
     description: "",
