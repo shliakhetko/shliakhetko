@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 const Section = (props) => {
   return (
-    <section style={{padding:"2rem 0"}} className={classNames(props.className, "Section")}>
+    <section style={{padding:"2rem 0.5rem"}} className={classNames(props.className, "Section")}>
       <div style={{margin:"auto"}} className={props.isRow ? "Row" : ""}>{props.children}</div>
     </section>
   );

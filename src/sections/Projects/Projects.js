@@ -12,7 +12,7 @@ export const Projects = () => {
   useEffect(() => {
     if (repositories) return;
     getRepositories()
-      .then((res) => {
+    .then((res) => {
         const repos = getInfoFromRepositories(res.data);
         setRepositories(repos);
         console.log(repos);

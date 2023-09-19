@@ -11,6 +11,7 @@ const Project = (props) => {
   const containerRef = useRef(null);
   const [isTurned, setIsTurned] = useState(props.content.isTurned);
   const [imageHeight, setImageHeight] = useState(null);
+  const [isImageHovered, setIsImageHovered] = useState(false);
 
   const content = props.content;
 
@@ -23,15 +24,18 @@ const Project = (props) => {
     gitHublUrl,
     topics,
     languagesUrl,
-    scrollTime,
+    // scrollTime,
   } = content;
 
   const [languages, setLanguages] = useState(null);
 
   useLayoutEffect(() => {
-    setImageHeight(
-      imageRef.current.offsetHeight - containerRef.current.offsetHeight
-    );
+    setImageHeight({
+      sum: imageRef.current.offsetHeight + containerRef.current.offsetHeight,
+      diff: imageRef.current.offsetHeight - containerRef.current.offsetHeight,
+      image: imageRef.current.offsetHeight,
+      container: containerRef.current.offsetHeight,
+    });
   }, [imageRef]);
 
   useEffect(() => {
@@ -45,6 +49,7 @@ const Project = (props) => {
           setLanguages(res);
         });
     }
+    console.log(isImageHovered);
   });
 
   return (
@@ -52,10 +57,18 @@ const Project = (props) => {
       <span className="Project__Title">{name}</span>
       <div ref={containerRef} className="Project__Preview">
         <img
+          onMouseEnter={() => {
+            setIsImageHovered(true);
+          }}
+          onMouseLeave={() => {
+            setIsImageHovered(false);
+          }}
           ref={imageRef}
           style={{
-            bottom: `-${imageHeight}px`,
-            transition: `${scrollTime || 5}s`,
+            bottom: `-${imageHeight?.image}px`,
+            // transform: isImageHovered
+            //   ? `translateY(-${imageHeight?.diff}px)`
+            //   : "translateY(0px)",
           }}
           className="Project__Image"
           src={image}

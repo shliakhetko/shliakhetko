@@ -1,6 +1,9 @@
 @import "../../../styles/variables.scss";
 
 .Technology {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     perspective: 2500px;
 
     &__Wrapper {
@@ -50,6 +53,7 @@
         display: flex;
         flex-direction: column;
         backface-visibility: hidden;
+        z-index: -1;
     }
 
     &__BackContent {
@@ -126,6 +130,7 @@
     &__Sorts {
         margin-bottom: 1rem;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
 
         &>* {
