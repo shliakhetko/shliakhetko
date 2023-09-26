@@ -1,4 +1,5 @@
 import { AboutMe } from "./sections/AboutMe/AboutMe";
+import { ContactMe } from "./sections/ContactMe/ContactMe";
 import { Introduction } from "./sections/Introduction/Introduction";
 import { Knowledge } from "./sections/Knowledge/Knowledge";
 import { Projects } from "./sections/Projects/Projects";
@@ -10,7 +11,8 @@ function App() {
         <Introduction />
         <AboutMe />
         <Knowledge />
-        <Projects/>
+        <Projects />
+        <ContactMe />
       </div>
     </div>
   );
