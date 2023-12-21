@@ -1,6 +1,6 @@
 const { Octokit } = require("@octokit/core");
 
-const TOKEN = "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";
+const TOKEN = "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";
 const USERNAME = "daniel-shliakhetko";
 
 //config.get("gitHubToken");

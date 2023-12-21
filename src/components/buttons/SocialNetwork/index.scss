@@ -1,15 +1,17 @@
 @import "../../../styles/variables.scss";
 
-.SocialNetwork{
-    padding: 0.5rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background-color: $text;
-    color: $bg;
-    &>*{
-        height: 2rem;
-        width: 2rem;
-    }
+.SocialNetwork {
+  height: 2.25rem;
+  width: 2.25rem;
+  padding: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: $text;
+  color: $bg;
+  & > * {
+    height: 2rem;
+    width: 2rem;
+  }
 }
