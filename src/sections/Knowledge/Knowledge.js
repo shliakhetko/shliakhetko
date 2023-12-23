@@ -7,7 +7,7 @@ import Section from "../Section";
 
 export const Knowledge = () => {
   return (
-    <Section className="Knowledge">
+    <Section className="Knowledge" id="technologies">
       <SectionTitle textAlign="Center" additional="Stack">
         Technology{" "}
       </SectionTitle>

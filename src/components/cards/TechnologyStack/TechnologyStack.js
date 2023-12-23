@@ -31,12 +31,12 @@ const TechnologyStack = (props) => {
     sortByLevel !== null
       ? sortArrByCriteria(cards, "level", technologiesLevels, sortByLevel)
       : sortByType !== null
-      ? sortArrByCriteria(cards, "type", technologiesTypes, sortByType)
-      : sortByName !== null
-      ? sortArrByName(cards, sortByName) 
-      : sortByDefault === false
-      ? [...cards].reverse()
-      : cards;
+        ? sortArrByCriteria(cards, "type", technologiesTypes, sortByType)
+        : sortByName !== null
+          ? sortArrByName(cards, sortByName)
+          : sortByDefault === false
+            ? [...cards].reverse()
+            : cards;
 
   return (
     <div
@@ -85,9 +85,9 @@ const TechnologyStack = (props) => {
       </div>
       <ul className="TechnologyStack__List">
         {filteredArray
-          .slice(0, isExtended ? filteredArray.length : props.max)
+          // .slice(0, isExtended ? filteredArray.length : props.max)
           .map((card, i) => (
-            <Technology key={i} index={i} content={card} />
+            <Technology key={i} index={i} content={card} style={{ display: props.max > i ? "block" : "none" }} />
           ))}
       </ul>
       <button

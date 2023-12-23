@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.Footer {
+    padding: 1rem  0!important;
+    background-color: $text;
+    &__Container{
+        display: flex;
+    }
+}
+
+.FooterLinks {
+    &__Title{
+        color:$element;
+    }
+    &__Link {
+        font-size: 1.15rem;
+        color: $white;
+    }
+}
+
+.FooterCopyright{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: $white;
+}

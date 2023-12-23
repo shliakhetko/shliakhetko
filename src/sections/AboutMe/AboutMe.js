@@ -8,7 +8,7 @@ import Section from "../Section";
 
 export const AboutMe = () => {
   return (
-    <Section className="AboutMe" isRow={true}>
+    <Section className="AboutMe" id="about" isRow={true}>
       <div className="AboutMe__InfoColumn">
         <SectionTitle additional="Me">About </SectionTitle>
         <Description>

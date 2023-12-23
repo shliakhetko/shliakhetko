@@ -1,9 +1,7 @@
+import TOKEN from "../data/github";
 const { Octokit } = require("@octokit/core");
 
-const TOKEN = "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";
 const USERNAME = "daniel-shliakhetko";
-
-//config.get("gitHubToken");
 
 const octokit = new Octokit({ auth: TOKEN });
 
