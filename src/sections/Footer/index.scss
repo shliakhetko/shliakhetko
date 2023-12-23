@@ -4,7 +4,9 @@
     padding: 1rem  0!important;
     background-color: $text;
     &__Container{
+        width: 100%;
         display: flex;
+        justify-content: space-between;
     }
 }
 
