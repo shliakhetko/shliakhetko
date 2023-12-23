@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.SocialNetworkList {
+  display: flex;
+  & > * {
+    margin-right: 1rem;
+  }
+}
+
+.ContactMe{
+  &__Contacts{
+  }
+}

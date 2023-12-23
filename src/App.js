@@ -1,5 +1,6 @@
-import { AboutMe } from "./sections/AboutMe/AboutMe";
 import { Footer } from "./sections/Footer/Footer";
+import { ContactMe } from "./sections/ContactMe/ContactMe";
+import { AboutMe } from "./sections/AboutMe/AboutMe";
 import { Introduction } from "./sections/Introduction/Introduction";
 import { Knowledge } from "./sections/Knowledge/Knowledge";
 import { Projects } from "./sections/Projects/Projects";
@@ -12,6 +13,7 @@ function App() {
         <AboutMe />
         <Knowledge />
         <Projects/>
+        <ContactMe />
         <Footer/>
       </div>
     </div>
