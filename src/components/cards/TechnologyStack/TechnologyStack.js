@@ -8,6 +8,7 @@ import {
   technologiesLevels,
   technologiesTypes,
 } from "../../../data/technologies";
+import TehcnologyExtendButton from "./TehcnologyExtendButton";
 
 const TechnologyStack = (props) => {
   const cards = props.cards;
@@ -31,12 +32,14 @@ const TechnologyStack = (props) => {
     sortByLevel !== null
       ? sortArrByCriteria(cards, "level", technologiesLevels, sortByLevel)
       : sortByType !== null
-        ? sortArrByCriteria(cards, "type", technologiesTypes, sortByType)
-        : sortByName !== null
-          ? sortArrByName(cards, sortByName)
-          : sortByDefault === false
-            ? [...cards].reverse()
-            : cards;
+      ? sortArrByCriteria(cards, "type", technologiesTypes, sortByType)
+      : sortByName !== null
+      ? sortArrByName(cards, sortByName)
+      : sortByDefault === false
+      ? [...cards].reverse()
+      : cards;
+
+    const max = props.max-1;
 
   return (
     <div
@@ -85,19 +88,22 @@ const TechnologyStack = (props) => {
       </div>
       <ul className="TechnologyStack__List">
         {filteredArray
-          // .slice(0, isExtended ? filteredArray.length : props.max)
+          .slice(0, isExtended ? filteredArray.length : max)
           .map((card, i) => (
-            <Technology key={i} index={i} content={card} style={{ display: props.max > i ? "block" : "none" }} />
+            <Technology
+              key={i}
+              index={i}
+              content={card}
+              style={{ display: max > i ? "block" : "none" }}
+            />
           ))}
+        <TehcnologyExtendButton
+          className={isExtended ? "TehcnologyExtendButton_Extended" : ""}
+          onClick={() => {
+            setIsExtended(!isExtended);
+          }}
+        />
       </ul>
-      <button
-        className="TechnologyStack__Extend"
-        onClick={() => {
-          setIsExtended(!isExtended);
-        }}
-      >
-        {isExtended ? "Hide" : "More"}
-      </button>
     </div>
   );
 };
@@ -105,7 +111,7 @@ const TechnologyStack = (props) => {
 const sortArrByName = (cards, direction = true) => {
   const answer = [...cards].sort((a, b) => a.title.localeCompare(b.title));
   return direction ? answer : answer.reverse();
-}
+};
 
 const sortArrByCriteria = (cards, criteria, criteriaArr, direction = true) => {
   const answer = [...cards].reverse().sort((a, b) => {

@@ -53,7 +53,7 @@ const Project = (props) => {
   });
 
   return (
-    <li className="Project">
+    <li className="Project" style={props.style}>
       <span className="Project__Title">{name}</span>
       <div ref={containerRef} className="Project__Preview">
         <img
@@ -109,14 +109,14 @@ const Project = (props) => {
         )}
 
         <div className="Project__Buttons">
-          <a
+          {homepage ? <a
             className="Project__VisitWebsite"
             href={homepage}
             target="_blank"
             rel="noreferrer"
           >
             Visit Website
-          </a>
+          </a>:<div className="Project__VisitWebsite" style={{opacity:0}}></div>}
           <a
             className="Project__GitHub"
             href={gitHublUrl}
@@ -133,6 +133,7 @@ const Project = (props) => {
 
 Project.propTypes = {
   content: PropTypes.object,
+  style: PropTypes.object,
 };
 
 export default Project;

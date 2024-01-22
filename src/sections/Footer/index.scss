@@ -1,27 +1,43 @@
 @import "../../styles/variables.scss";
 
 .Footer {
-    padding: 1rem  0!important;
-    background-color: $text;
-    &__Container{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+  flex-direction: column;
+  background-color: $text;
+
+  .Row {
+    flex-direction: column;
+    box-sizing: border-box;
+    
+    @media (max-width: $mobile) {
+      padding: 2rem 0.5rem;
     }
+  }
+
+  &__Container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      justify-content: start !important;
+      flex-direction: column;
+    }
+  }
 }
 
 .FooterLinks {
-    &__Title{
-        color:$element;
-    }
-    &__Link {
-        font-size: 1.15rem;
-        color: $white;
-    }
+  padding: 0 5vw;
+  padding-bottom: 2rem;
+  &__Title {
+    color: $element;
+  }
+  &__Link {
+    font-size: 1.15rem;
+    color: $white;
+  }
 }
 
-.FooterCopyright{
-    margin-top: 2rem;
-    font-size: 1rem;
-    color: $white;
+.FooterCopyright {
+  font-size: 1rem;
+  text-align: center;
+  color: $white;
 }

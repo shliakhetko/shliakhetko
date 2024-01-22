@@ -2,7 +2,14 @@
 
 .AboutMe {
     &>* {
+        &>*{
+            max-width: 100%;
+        }
         padding: 5rem 0;
         flex-direction: row-reverse;
+
+        @media (max-width:$tablet) {
+            padding: 0;
+        }
     }
 }

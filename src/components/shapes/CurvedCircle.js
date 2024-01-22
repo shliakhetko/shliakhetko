@@ -10,7 +10,6 @@ const CurvedCircle = (props) => {
       style={style}
       className={classNames(className, "Shape")}
       xmlns="http://www.w3.org/2000/svg"
-      id="SvgjsSvg1286"
       width="200"
       height="200"
       x="0"

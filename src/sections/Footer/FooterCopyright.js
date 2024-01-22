@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const FooterCopyright = props => {
+  const date = new Date().getFullYear();
+
   return (
-    <div className='FooterCopyright'>© all rights reserved</div>
+    <div className='FooterCopyright'>© Copyright {date}. All rights reserved. </div>
   )
 }
 

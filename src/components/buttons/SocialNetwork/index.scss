@@ -13,5 +13,13 @@
   & > * {
     height: 2rem;
     width: 2rem;
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $black;
+    color: $element;
   }
 }

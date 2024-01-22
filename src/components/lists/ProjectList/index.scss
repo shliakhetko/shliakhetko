@@ -1,9 +1,20 @@
 @import "../../../styles/variables.scss";
 
+.Projects {
+  & > * {
+    width: 100%;
+    flex-direction: column;
+  }
+  .SectionTitle {
+    margin-bottom: 2rem;
+  }
+}
+
 .Project {
   width: 55rem;
-  max-width: calc(100vw - 8px);
+  max-width: calc(100% - 8px);
   padding: 1rem;
+  box-sizing: border-box;
 
   @media (max-width: $mobile) {
     padding: 0;
@@ -64,7 +75,7 @@
     }
 
     @media (max-width: $mobile) {
-      height: 12.5rem;
+      height: 7.5rem;
       max-width: calc(100vw - 4rem);
     }
   }
@@ -154,6 +165,9 @@
 
   &__Description {
     font-size: 1.1rem;
+    @media (max-width:$mobile) {
+      text-align: center;
+    }
   }
 
   &__Buttons {
@@ -174,6 +188,12 @@
     border-radius: 2rem;
     background-color: $element;
     color: $hover;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $text;
+      color: $bg;
+    }
   }
 
   &__GitHub {
@@ -300,6 +320,7 @@
 
     & > *:nth-of-type(even) {
       margin-right: 10rem;
+      margin-left: auto;
 
       @media (max-width: $tablet) {
         margin-right: 0;

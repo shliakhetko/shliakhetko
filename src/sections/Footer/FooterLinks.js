@@ -13,6 +13,9 @@ export const links = [{
 }, {
     title: "Projects",
     link: "#projects",
+}, {
+    title: "Contact Me",
+    link: "#contacts",
 }]
 
 export const FooterLinks = (props) => {

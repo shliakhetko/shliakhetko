@@ -7,7 +7,7 @@ import FooterCopyright from "./FooterCopyright";
 import socialNetworks from "../../data/socialNetworks";
 
 export const Footer = () => {
-    return (<Section className="Footer">
+    return (<Section className="Footer" isRow={true}>
         <div className="Footer__Container">
             <FooterLinks title={"Navigation"} list={links} />
             <FooterLinks title={"Social Media"} list={socialNetworks} targetBlank={true} />

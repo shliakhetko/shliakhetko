@@ -3,6 +3,12 @@
 $height: 7.5rem;
 $border: 0.5rem;
 
+.Skill__Content{
+    @media (max-width: $tablet) {
+        width: 100%;
+    }
+}
+
 .Skill {
     margin: 1rem;
     height: $height;

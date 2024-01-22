@@ -7,13 +7,20 @@ const ProjectList = (props) => {
   const [showAll, setShowAll] = useState(false);
   const list = props.list;
 
+  const length = showAll ? list.length : props.max;
+
   return (
     <div className="ProjectList">
       <ul className="ProjectList__List">
         {list &&
           [...list]
-            .slice(0, showAll ? list.length : props.max)
-            .map((project, i) => <Project key={i} content={project} />)}
+            .map((project, i) => (
+              <Project
+                style={{ display: i < length ? "flex" : "none" }}
+                key={i}
+                content={project}
+              />
+            ))}
       </ul>
       <button
         className="ProjectList__Show"

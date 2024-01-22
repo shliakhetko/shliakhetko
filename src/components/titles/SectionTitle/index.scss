@@ -3,6 +3,10 @@
 .SectionTitle {
     font-size: 2.25em;
 
+    @media (max-width:$tablet) {
+        text-align: center;
+    }
+
     &__OtherColorText {
         color: $hover;
         font-weight: 600;

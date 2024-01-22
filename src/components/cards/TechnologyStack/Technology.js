@@ -14,10 +14,10 @@ const Technology = (props) => {
         </div>
         <div className="Technology__BackContent">
           <span className="Technology__BackTitle">{title}</span>
-          <p className="Technology__Description">{description}</p>
           <span style={{ color: level.color }} className="Technology__Level">
             {level.text}
           </span>
+          <p className="Technology__Description">{description}</p>
           <a
             href={link}
             target="_blank"

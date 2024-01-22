@@ -23,7 +23,7 @@ export const Projects = () => {
   }, [repositories]);
 
   return (
-    <Section className="Projects" id="projects">
+    <Section className="Projects" id="projects" isRow={true}>
       <SectionTitle textAlign="Center">Projects</SectionTitle>
       <ProjectList list={repositories} max={3} />
     </Section>

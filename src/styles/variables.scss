@@ -5,71 +5,7 @@ $hover: #213555;
 $white: #FAF8F6;
 $black: #1D1C1A;
 
-// $bg: #eef0f2;
-// $element: #eec643;
-// $text: #0d21a1;
-// $hover: #011638;
-// $white: #faf8f6;
-// $black: #1d1c1a;
-
-// :root {
-//   --bg: $bg;
-
-//   @media (prefers-color-scheme: dark) {
-//     --bg: red;
-//   }
-// }
-
-// $theme: (
-//     default:($bg: #F5EFE7,
-//         $element: #D8C4B6,
-//         $text: #4F709C,
-//         $hover: #213555,
-//         $white: #FAF8F6,
-//         $black: #1D1C1A,
-//     ),
-//     dark:($bg: #1D1C1A,
-//         $element: #1D1C1A,
-//         $text: #FAF8F6,
-//         $hover: #FAF8F6,
-//         $white: #1D1C1A,
-//         $black: #FAF8F6,
-//     )
-// );
-
-// @mixin themed() {
-
-//     @each $theme,
-//     $map in $themes {
-//         .theme--#{$theme} & {
-//             $theme-map: () !global;
-
-//             @each $key,
-//             $submap in $map {
-//                 $value: map-get(map-get($themes, $theme), '#{$key}');
-//                 $theme-map: map-merge($theme-map, ($key: $value)) !global;
-//             }
-
-//             @content;
-//             $theme-map: null !global;
-//         }
-//     }
-// }
-
-// @function t($key) {
-//     @return map-get($theme-map, $key);
-// }
-
-// @if $dark-theme {
-
-// $bg: #1D1C1A;
-// $element: #1D1C1A;
-// $text: #FAF8F6;
-// $hover: #FAF8F6;
-// $white: #1D1C1A;
-// $black: #FAF8F6;
-// }
-
 $dekstop: 1440px;
+$smallDekstop: 1280px;
 $tablet: 1080px;
 $mobile: 768px;
