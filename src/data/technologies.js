@@ -4,8 +4,15 @@ import js from "../images/technologies/js.png";
 import react from "../images/technologies/react.png";
 import redux from "../images/technologies/redux.png";
 import sass from "../images/technologies/sass.png";
-import tailwind from "../images/technologies/tailwind.png"
+import tailwind from "../images/technologies/tailwind.png";
 import bootstrap from "../images/technologies/bootstrap.png";
+import firebase from "../images/technologies/firebase.png";
+import wordpress from "../images/technologies/wordpress.png";
+import php from "../images/technologies/php.png";
+import mongodb from "../images/technologies/mongodb.png";
+import express from "../images/technologies/express.png";
+import nodejs from "../images/technologies/nodejs.png";
+import jquery from "../images/technologies/jquery.png";
 
 export const technologiesTypes = {
   BIG: { type: "BIG" },
@@ -23,7 +30,7 @@ export const technologiesLevels = {
 const technologies = [
   {
     title: "HTML",
-    slug:"html",
+    slug: "html",
     type: technologiesTypes.BIG,
     thumbnail: html,
     description: "",
@@ -32,7 +39,7 @@ const technologies = [
   },
   {
     title: "CSS",
-    slug:"css",
+    slug: "css",
     type: technologiesTypes.BIG,
     thumbnail: css,
     description: "",
@@ -41,7 +48,7 @@ const technologies = [
   },
   {
     title: "JavaScript",
-    slug:"js",
+    slug: "js",
     type: technologiesTypes.BIG,
     thumbnail: js,
     description: "",
@@ -50,7 +57,7 @@ const technologies = [
   },
   {
     title: "React",
-    slug:"react",
+    slug: "react",
     type: technologiesTypes.BIG,
     thumbnail: react,
     description: "",
@@ -59,7 +66,7 @@ const technologies = [
   },
   {
     title: "Redux",
-    slug:"redux",
+    slug: "redux",
     type: technologiesTypes.MEDIUM,
     thumbnail: redux,
     description: "",
@@ -68,7 +75,7 @@ const technologies = [
   },
   {
     title: "SASS",
-    slug:"sass",
+    slug: "sass",
     type: technologiesTypes.SMALL,
     thumbnail: sass,
     description: "",
@@ -77,7 +84,7 @@ const technologies = [
   },
   {
     title: "Tailwind CSS",
-    slug:"tailwind",
+    slug: "tailwind",
     type: technologiesTypes.MEDIUM,
     thumbnail: tailwind,
     description: "",
@@ -86,12 +93,75 @@ const technologies = [
   },
   {
     title: "Bootstrap",
-    slug:"bootstrap",
+    slug: "bootstrap",
     type: technologiesTypes.MEDIUM,
     thumbnail: bootstrap,
     description: "",
     link: "https://getbootstrap.com",
     level: technologiesLevels.BASIC,
+  },
+  {
+    title: "Firebase",
+    slug: "firebase",
+    type: technologiesTypes.MEDIUM,
+    thumbnail: firebase,
+    description: "",
+    link: "https://firebase.google.com",
+    level: technologiesLevels.GOOD,
+  },
+  {
+    title: "mongoDb",
+    slug: "mongodb",
+    type: technologiesTypes.MEDIUM,
+    thumbnail: mongodb,
+    description: "",
+    link: "https://www.mongodb.com",
+    level: technologiesLevels.GOOD,
+  },
+  {
+    title: "NodeJs",
+    slug: "nodejs",
+    type: technologiesTypes.MEDIUM,
+    thumbnail: nodejs,
+    description: "",
+    link: "https://nodejs.org/en/about",
+    level: technologiesLevels.GOOD,
+  },
+  {
+    title: "Express",
+    slug: "express",
+    type: technologiesTypes.BIG,
+    thumbnail: express,
+    description: "",
+    link: "https://expressjs.com",
+    level: technologiesLevels.GOOD,
+  },
+  {
+    title: "WordPress",
+    slug: "wordpress",
+    type: technologiesTypes.BIG,
+    thumbnail: wordpress,
+    description: "",
+    link: "https://wordpress.org",
+    level: technologiesLevels.GOOD,
+  },
+  {
+    title: "PHP",
+    slug: "php",
+    type: technologiesTypes.BIG,
+    thumbnail: php,
+    description: "",
+    link: "https://www.php.net",
+    level: technologiesLevels.GOOD,
+  },
+  {
+    title: "jQuery",
+    slug: "jquery",
+    type: technologiesTypes.MEDIUM,
+    thumbnail: jquery,
+    description: "",
+    link: "https://jquery.com",
+    level: technologiesLevels.GOOD,
   },
 ];
 

@@ -1,9 +1,8 @@
-import TOKEN from "../data/github";
 const { Octokit } = require("@octokit/core");
 
 const USERNAME = "daniel-shliakhetko";
 
-const octokit = new Octokit({ auth: TOKEN });
+const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
 export const getRepositories = async () => {
   return octokit

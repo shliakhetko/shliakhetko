@@ -4,26 +4,27 @@ import zymeriaConcert from "../images/projects/zymeria-concert.png";
 import tradeCrypto from "../images/projects/trade-crypto.png";
 import vibo from "../images/projects/vibo.png";
 import leonAgency from "../images/projects/leon-agency.png";
+import shliakhetko from "../images/projects/shliakhetko.png";
 
 export const gitHubProjects = [
   {
     name: "clothing-bullet",
     image: clothingBullet,
-    stack: ["react", "tailwind"],
+    stack: ["react", "redux", "firebase",  "sass", "tailwind"],
     isTurned: false,
     scrollTime: 5,
   },
   {
     name: "italian-food",
     image: italianFood,
-    stack: ["html", "sass", "js", "bootstrap"],
+    stack: ["html", "sass", "js", "jquery", "bootstrap"],
     isTurned: false,
     scrollTime: 5,
   },
   {
     name: "zyemira-concert",
     image: zymeriaConcert,
-    stack: ["html", "sass", "js", "bootstrap"],
+    stack: ["html", "sass", "js", "jquery", "bootstrap"],
     isTurned: false,
     scrollTime: 5,
   },
@@ -37,14 +38,21 @@ export const gitHubProjects = [
   {
     name: "vibo",
     image: vibo,
-    stack: ["html", "sass", "js", "bootstrap"],
+    stack: ["html", "sass", "js", "jquery", "bootstrap"],
     isTurned: false,
     scrollTime: 5,
   },
   {
     name: "leon-agency",
     image: leonAgency,
-    stack: ["html", "sass", "js", "bootstrap"],
+    stack: ["html", "sass", "js", "jquery", "bootstrap"],
+    isTurned: false,
+    scrollTime: 5,
+  },
+  {
+    name: "shliakhetko",
+    image: shliakhetko,
+    stack: ["react", "js", "sass"],
     isTurned: false,
     scrollTime: 5,
   },
