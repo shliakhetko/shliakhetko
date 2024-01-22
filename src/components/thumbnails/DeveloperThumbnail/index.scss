@@ -1,87 +1,103 @@
 @import "../../../styles/variables.scss";
 
 .DeveloperThumbnail {
-    max-width: 75%;
-    position: relative;
+  position: relative;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.025);
+
+    .DeveloperThumbnail {
+      &__ImageShadow {
+        transform: translate(-0.75rem, -0.75rem);
+      }
+
+      &__ImageContainer {
+        transform: translate(0.75rem, 0.75rem);
+      }
+
+      &__Hover {
+        opacity: 1;
+        transition-delay: 0s;
+      }
+      &__Hover2 {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__ImageContainer {
+    top: -0.375rem;
+    left: -0.375rem;
+    position: absolute;
+    z-index: 10;
     transition: 0.5s;
+  }
+
+  &__Image {
+    width: auto;
+    height: 30rem;
+    border-radius: 1rem;
 
     &:hover {
-        transform: scale(1.025);
+      bottom: -0.75rem;
+      right: -0.75rem;
+    }
+  }
 
-        .DeveloperThumbnail {
+  &__Hover,
+  &__Hover2 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    border-radius: 1rem;
+    z-index: 15;
+    transition: 0.5s;
+  }
 
-            &__ImageShadow {
-                transform: translate(-0.75rem, -0.75rem);
-            }
+  &__Hover2 {
+    z-index: 20;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
 
-            &__Image {
-                transform: translate(0.75rem, 0.75rem);
-            }
-        }
+  &__ImageShadow {
+    bottom: -0.375rem;
+    right: -0.375rem;
+    position: absolute;
+    border-radius: 1.5rem;
+    background-color: $text;
+    transition: 0.5s;
+  }
+
+  &__Decoration {
+    height: 7.5rem;
+    width: 7.5rem;
+    position: absolute;
+    animation: linear infinite 25s rotating;
+    z-index: 20;
+    transition: 1s;
+
+    &:nth-of-type(1) {
+      top: -3rem;
+      left: -4rem;
     }
 
-    &__Image {
-        top: -0.375rem;
-        left: -0.375rem;
-        position: absolute;
-        width: auto;
-        height: 30rem;
-        border-radius: 1rem;
-        z-index: 10;
-        transition: 0.5s;
-
-        &:hover {
-            bottom: -0.75rem;
-            right: -0.75rem;
-        }
+    &:nth-of-type(2) {
+      bottom: -2rem;
+      right: -3rem;
+      animation-duration: 40s;
     }
-
-    &__ImageShadow {
-        bottom: -0.375rem;
-        right: -0.375rem;
-        position: absolute;
-        border-radius: 1.5rem;
-        background-color: $text;
-        transition: 0.5s;
-    }
-
-    &__Decoration {
-        height: 7.5rem;
-        width: 7.5rem;
-        position: absolute;
-        animation: linear infinite 25s rotating;
-        z-index: 20;
-        transition: 1s;
-
-        &:nth-of-type(1) {
-            top: -3rem;
-            left: -4rem;
-        }
-
-        &:nth-of-type(2) {
-            bottom: -2rem;
-            right: -3rem;
-            animation-duration: 40s;
-        }
-    }
-}
-
-@keyframes rotating {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+  }
 }
 
 @keyframes ultra-rotating {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(-360deg);
-    }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
