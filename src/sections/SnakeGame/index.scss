@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+
+.SnakeGame {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(1.15);
+
+  &__Controlls {
+    text-align: center;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+
+  &Playground {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: $element;
+    transition: 0.5s;
+  }
+
+  &Score {
+    display: flex;
+    &__Current,
+    &__Max {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    .SnakeGame__Controlls {
+      transform: translateY(-1rem);
+    }
+    .SnakeGamePlayground {
+      transform: scale(1.05);
+    }
+  }
+}
