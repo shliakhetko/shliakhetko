@@ -16,10 +16,12 @@
   &__Container {
     display: flex;
     justify-content: space-between;
+    padding: 0 5rem;
 
     @media (max-width: $mobile) {
       justify-content: start !important;
       flex-direction: column;
+      padding: 0;
     }
   }
 }

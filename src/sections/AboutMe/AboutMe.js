@@ -12,17 +12,21 @@ export const AboutMe = () => {
       <div className="AboutMe__InfoColumn">
         <SectionTitle additional="Me">About </SectionTitle>
         <Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <b>Experience:</b> I am junior frontend developer, the one you definitely need. I have
+          been learning Front-end technologies for 2 years straight. During this time I’ve
+          worked on 10+ Projects.
+          <br />
+          <b>Knowledge:</b> I study Computer Science “Artificial Intelligence” at National
+          University Lviv Polytechnic, at the same time, I am improving my professional and development skills.
+          <br />
+          <b>Personality:</b> I am polite and friendly person, who will be glad to meet new
+          people. My best personal qualities are resonsibility, as well as
+          adaptability. I am patient and diligent person with big ambitions,
+          always ready for hard work and new challenges.
         </Description>
       </div>
       <div className="AboutMe__SkillsColumn">
-        <Skills list={skills}/>
+        <Skills list={skills} />
       </div>
     </Section>
   );

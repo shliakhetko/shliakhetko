@@ -1,22 +1,24 @@
 import { RiGraduationCapFill } from "react-icons/ri";
+import { LuLanguages } from "react-icons/lu";
+import { FaG, FaGears } from "react-icons/fa6";
 
 const skills = [
   {
-    title: "Ultra Skill 1",
+    title: "Languages",
     description:
-      "Lorem ipsum dolor sit amet,",
-    Icon: RiGraduationCapFill,
+      "English - B2, Polish - B1, Ukrainian - fluently",
+    Icon: LuLanguages,
   },
   {
-    title: "Ultra Skill 2",
+    title: "Dev Tools",
     description:
-      "Lorem ipsum dolor sit amet,",
-    Icon: RiGraduationCapFill,
+      "450+ commits on GitHub. Trello. VS Code",
+    Icon: FaGears,
   },
   {
-    title: "Ultra Skill 3",
+    title: "Education",
     description:
-      "Lorem ipsum dolor sit amet,",
+      'Computer Science "Artificial Inteligence"',
     Icon: RiGraduationCapFill,
   },
 ];

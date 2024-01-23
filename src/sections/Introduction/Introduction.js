@@ -11,7 +11,7 @@ export const Introduction = () => {
       <div className="Introduction__InfoColumn">
         <div className="Introduction__Info">
           <MainTitle firstPart="Daniel" secondPart="Shliakhetko" />
-          <MainCaption>Junior React Front End Developer</MainCaption>
+          <MainCaption>Junior React Front-end Developer</MainCaption>
         </div>
       </div>
       <div className="Introduction__ThumbnailColumn Centred">

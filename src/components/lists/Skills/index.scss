@@ -12,7 +12,7 @@ $border: 0.5rem;
 .Skill {
     margin: 1rem;
     height: $height;
-    width:90%;
+    width: 90%;
     position: relative;
     display: flex;
     align-items: center;
@@ -61,6 +61,7 @@ $border: 0.5rem;
     }
 
     &__Content {
+        width: 100%;
         margin-left: 4.75rem;
         padding: $border;
         padding-left: 4.75rem;
@@ -80,7 +81,7 @@ $border: 0.5rem;
     }
 
     &__Description {
-        font-size: 0.85em;
+        font-size: 0.75em;
     }
 
     &:hover {

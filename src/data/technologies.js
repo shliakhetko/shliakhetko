@@ -107,16 +107,16 @@ const technologies = [
     thumbnail: firebase,
     description: "",
     link: "https://firebase.google.com",
-    level: technologiesLevels.GOOD,
+    level: technologiesLevels.BASIC,
   },
   {
     title: "mongoDb",
     slug: "mongodb",
-    type: technologiesTypes.MEDIUM,
+    type: technologiesTypes.BASIC,
     thumbnail: mongodb,
     description: "",
     link: "https://www.mongodb.com",
-    level: technologiesLevels.GOOD,
+    level: technologiesLevels.BASIC,
   },
   {
     title: "NodeJs",
@@ -134,7 +134,7 @@ const technologies = [
     thumbnail: express,
     description: "",
     link: "https://expressjs.com",
-    level: technologiesLevels.GOOD,
+    level: technologiesLevels.BASIC,
   },
   {
     title: "WordPress",
@@ -143,7 +143,7 @@ const technologies = [
     thumbnail: wordpress,
     description: "",
     link: "https://wordpress.org",
-    level: technologiesLevels.GOOD,
+    level: technologiesLevels.BASIC,
   },
   {
     title: "PHP",
@@ -152,7 +152,7 @@ const technologies = [
     thumbnail: php,
     description: "",
     link: "https://www.php.net",
-    level: technologiesLevels.GOOD,
+    level: technologiesLevels.BASIC,
   },
   {
     title: "jQuery",
@@ -161,7 +161,7 @@ const technologies = [
     thumbnail: jquery,
     description: "",
     link: "https://jquery.com",
-    level: technologiesLevels.GOOD,
+    level: technologiesLevels.BASIC,
   },
 ];
 

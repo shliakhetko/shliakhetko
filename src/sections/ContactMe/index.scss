@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5rem 2rem;
   }
 
   .MainCaption{
@@ -35,6 +36,9 @@
 
   &__GameColumn {
     display: flex;
+    @media (max-width: $tablet){
+      display: none;
+    }
   }
 
   &__Decoration {

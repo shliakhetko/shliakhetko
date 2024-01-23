@@ -12,4 +12,12 @@
             padding: 0;
         }
     }
+
+    &__SkillsColumn{
+        padding: 6rem 2rem 0 2rem;
+
+        @media (max-width:$tablet){
+            padding: 0;
+        }
+    }
 }
