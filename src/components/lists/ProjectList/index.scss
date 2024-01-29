@@ -44,6 +44,11 @@
       width: 25rem;
     }
 
+    @media (max-width: $smallMobile) {
+      height: 9rem; 
+      width: 15rem;
+    }
+
     &:hover .Project__Image {
       transform: translateY(0px);
     }

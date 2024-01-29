@@ -236,14 +236,7 @@ export const SnakeGame = (props) => {
 
     document.addEventListener("keydown", keyDownHandler);
 
-    return () => {
-      document.removeEventListener("keydown", keyDownHandler);
-    };
-  }, []);
-
-  useLayoutEffect(
-    () => async () => {
-      canvas = canvasRef.current;
+    canvas = canvasRef.current;
       setLoop(true);
       if (isLoop) return;
       const context = canvas.getContext("2d");
@@ -258,9 +251,32 @@ export const SnakeGame = (props) => {
           game(context);
         }
       }, gameSpeed);
-    },
-    []
-  );
+
+    return () => {
+      document.removeEventListener("keydown", keyDownHandler);
+    };
+  }, []);
+
+  // useLayoutEffect(
+  //   () => async () => {
+  //     canvas = canvasRef.current;
+  //     setLoop(true);
+  //     if (isLoop) return;
+  //     const context = canvas.getContext("2d");
+  //     gameMaxScore = localStorage.getItem("maxScore");
+  //     restartGame();
+  //     drawCanvas(context);
+  //     game(context);
+
+  //     setInterval(() => {
+  //       if (!pause) {
+  //         drawCanvas(context);
+  //         game(context);
+  //       }
+  //     }, gameSpeed);
+  //   },
+  //   []
+  // );
 
   return (
     <div className="SnakeGame">
