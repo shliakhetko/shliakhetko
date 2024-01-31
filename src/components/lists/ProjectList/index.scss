@@ -63,6 +63,10 @@
     @media (max-width: $tablet) {
       transform: translateY(calc(100% - 15rem));
     }
+
+    @media (max-width: $smallMobile) {
+      transform: translateY(calc(100% - 9rem));
+    }
   }
 
   &__Info {
