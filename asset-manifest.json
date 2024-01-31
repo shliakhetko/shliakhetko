@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shliakhetko/static/css/main.1903b1e9.css",
-    "main.js": "/shliakhetko/static/js/main.7f487634.js",
+    "main.css": "/shliakhetko/static/css/main.b3e11c25.css",
+    "main.js": "/shliakhetko/static/js/main.b6af6f03.js",
     "static/media/italian-food.png": "/shliakhetko/static/media/italian-food.3c02704b5e8d182c6106.png",
     "static/media/trade-crypto.png": "/shliakhetko/static/media/trade-crypto.59147ed238dc9fe6cf25.png",
     "static/media/zymeria-concert.png": "/shliakhetko/static/media/zymeria-concert.fbc737e00d7b22979dae.png",
@@ -28,11 +28,11 @@
     "static/media/jquery.png": "/shliakhetko/static/media/jquery.59c0d4d26fb6326be9c3.png",
     "static/media/express.png": "/shliakhetko/static/media/express.9b344d7469dbbdc76754.png",
     "index.html": "/shliakhetko/index.html",
-    "main.1903b1e9.css.map": "/shliakhetko/static/css/main.1903b1e9.css.map",
-    "main.7f487634.js.map": "/shliakhetko/static/js/main.7f487634.js.map"
+    "main.b3e11c25.css.map": "/shliakhetko/static/css/main.b3e11c25.css.map",
+    "main.b6af6f03.js.map": "/shliakhetko/static/js/main.b6af6f03.js.map"
   },
   "entrypoints": [
-    "static/css/main.1903b1e9.css",
-    "static/js/main.7f487634.js"
+    "static/css/main.b3e11c25.css",
+    "static/js/main.b6af6f03.js"
   ]
 }
